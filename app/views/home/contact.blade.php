@@ -32,17 +32,20 @@
 			    <div class="row">
 				<div class="col-sm-4">
 				    <h3><i class="fa fa-map-marker"></i> Address</h3>
-				    <br/>
-					<strong>Thessaloniki/Greece</strong></p>
+				    "Allen Eood"<br/>
+				    blvd. "James Bourchier"<br/>
+				    No: 76A,floor 3<sup>rd</sup><br/>
+				    <strong>Sofia/BULGARIA</strong></p>
 				</div><!-- /.col-sm-4 -->
 				<div class="col-sm-4">
-				    <h3><i class="fa fa-phone"></i> Call center</h3>
+				    <h3><i class="fa fa-phone"></i> Phone</h3>
 				    <p class="text-muted">.</p>
-				    <p><strong>+90 555 444 3333</strong></p>
+				    <p>Tel&Fax : <strong>+359 2 439 4107</strong></p>
+				    <p>Mobile : <strong>+359 89 891 0007</strong></p>
 				</div><!-- /.col-sm-4 -->
 				<div class="col-sm-4">
 				    <h3><i class="fa fa-envelope"></i> Electronic support</h3>
-				    <p class="text-muted">Please feel free to write an email to us or to use our electronic ticketing system.</p>
+				    <p class="text-muted">Please feel free to write an email to us.</p>
 				    <ul>
 					<li><strong><a href="mailto:info@allen-bg.eu">info@allen-bg.eu</a></strong></li>
 				    </ul>

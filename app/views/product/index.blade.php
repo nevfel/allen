@@ -33,8 +33,8 @@
 			<div class="row" id="productMain">
 			    <div class="col-sm-6">
 				<div id="mainImage">
-					@if($product->uploads()->first())
-						{{HTML::image($product->uploads()->first()->sizeImg( 400 , 400 , false ),"",array("class"=>"img-responsive"))}}
+					@if($img = $product->uploads()->first())
+						{{HTML::image($img->sizeImg( 400 , 400 , false ),"",array("class"=>"img-responsive"))}}
 					@endif
 				</div>
 
@@ -63,11 +63,13 @@
 
 				<div class="row" id="thumbs">
 					@foreach($product->uploads as $img)
-				    <div class="col-xs-4">
-					<a href="{{URL::to($img->sizeImg(400,400,false))}}" class="thumb">
-					    {{HTML::image($img->sizeImg(111,111,false),"",array("class"=>"img-responsive"))}}
-					</a>
-				    </div>
+						@if($img)
+					    <div class="col-xs-4">
+						<a href="{{URL::to($img->sizeImg(400,400,false))}}" class="thumb">
+						    {{HTML::image($img->sizeImg(111,111,false),"",array("class"=>"img-responsive"))}}
+						</a>
+					    </div>
+					    @endif
 				    @endforeach			    
 				</div>
 			    </div>

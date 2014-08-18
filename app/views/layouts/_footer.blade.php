@@ -7,9 +7,9 @@
 			<h4>Pages</h4>
 
 			<ul>
-			    <li><a href="{{URL::to("text")}}">About us</a></li>
-			    <li><a href="{{URL::to("text")}}">Terms and conditions</a></li>
-			    <li><a href="{{URL::to("text")}}">FAQ</a></li>
+			    <li><a href="{{URL::to("/")}}">About us</a></li>
+			    <li><a href="{{URL::to("/")}}">Terms and conditions</a></li>
+			    <li><a href="{{URL::to("/")}}">FAQ</a></li>
 			    <li><a href="{{URL::to("contact")}}">Contact us</a></li>
 			</ul>
 
@@ -18,8 +18,8 @@
 			<h4>User section</h4>
 
 			<ul>
-			    <li><a href="{{URL::to("login")}}">Login</a></li>
-			    <li><a href="{{URL::to("login")}}">Register</a></li>
+			    <li><a href="{{URL::to("/")}}">Login</a></li>
+			    <li><a href="{{URL::to("/")}}">Register</a></li>
 			</ul>			
 
 			<hr class="hidden-md hidden-lg hidden-sm">
@@ -56,11 +56,11 @@
 
 			<h4>Where to find us</h4>
 
-			<p><strong>Allen Sales Office</strong>
-			    <br>Sofia/Bulgaria<br/>
-			    <strong>Warehouse</strong><br/>
-			    Thessaloniki/Greece</p>		
-
+			<p><strong>"Allen Eood"</strong><br/>
+				    blvd. "James Bourchier"<br/>
+				    No: 76A,floor 3<sup>rd</sup><br/>
+				    <strong>Sofia/BULGARIA</strong></p>		
+			<p><strong>Tel&Fax :</p> +359 2 439 4107</p>
 			<a href="{{URL::to("contact")}}">Go to contact page</a>
 
 			<hr class="hidden-md hidden-lg hidden-sm">
