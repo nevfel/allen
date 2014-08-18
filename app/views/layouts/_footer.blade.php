@@ -32,19 +32,19 @@
 
 		   <h5>Upholstery fabric</h5>
 		   	<ul>
-		   		<li><a href="http://allen-bg.app/category/chenille">Chenille</a></li>
-		   		<li><a href="http://allen-bg.app/category/jacquard">Jacquard</a></li>
-		   		<li><a href="http://allen-bg.app/category/plain">Plain</a></li>
+		   		<li><a href="{{URL::to("category/chenille")}}">Chenille</a></li>
+		   		<li><a href="{{URL::to("category/jacquard")}}">Jacquard</a></li>
+		   		<li><a href="{{URL::to("category/plain")}}">Plain</a></li>
 		   	</ul>
 		   	<h5>Auto&Office</h5>
 		   	<ul>
-		   		<li><a href="http://allen-bg.app/category/auto-textiles">Auto Textiles</a></li>
-		   		<li><a href="http://allen-bg.app/category/office-textiles">Office Textiles</a></li>
+		   		<li><a href="{{URL::to("category/auto-textiles")}}">Auto Textiles</a></li>
+		   		<li><a href="{{URL::to("category/office-textiles")}}">Office Textiles</a></li>
 		   	</ul>
 		   	<h5>Others</h5>
 		   	<ul>
-		   		<li><a href="http://allen-bg.app/category/artificial-leather">Artificial leather</a></li>
-		   		<li><a href="http://allen-bg.app/category/mattress">Mattress</a></li>
+		   		<li><a href="{{URL::to("category/artificial-leather")}}">Artificial leather</a></li>
+		   		<li><a href="{{URL::to("category/mattress")}}">Mattress</a></li>
 		   	</ul>
 
 
