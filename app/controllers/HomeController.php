@@ -8,10 +8,28 @@ class HomeController extends BaseController {
 		return View::make('home.contact');
 	}
 
-	public function postIletisim()
+	public function postContact()
 	{
-		echo "<pre>";
-		print_r(Input::all());
+		$input = Input::all();
+
+		$validation = Validator::make($input, Contact::$rules);
+		
+		if ($validation->passes())
+		{
+			$input["ip_address"] = $_SERVER["REMOTE_ADDR"];
+
+			Contact::create($input);
+
+			return Redirect::to('contact')
+				->with("alert","success")
+				->with("message","Thank you for filling in this form! Your information has been successfully submitted. We will process its contents and get back to you as soon as possible.");
+		}
+
+		return Redirect::to('contact')
+			->withInput()
+			->withErrors($validation)
+			->with('alert','warning')
+			->with('message', 'There were validation errors.');
 	}
 
 	public function getIk()

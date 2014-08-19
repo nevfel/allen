@@ -26,12 +26,11 @@
 <body class="no-padding">
 
 @include("layouts._navigation")
-					
+
 @yield("intro")
 
 <div id="all">
-
-
+	
     @yield("content")
 
 

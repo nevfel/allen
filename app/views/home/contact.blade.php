@@ -13,8 +13,6 @@
 			    <li>Contact</li>
 			</ul>
 
-
-
 			<div class="box text-center">
 
 			    <div class="row">
@@ -50,41 +48,47 @@
 
 			    <hr>
 
-			   
-			    <hr>
+			  	@if(Session::has("alert"))
+					@include('layouts._information')
+				@endif
 			    <h2 class="text-center">Contact form</h2>
 
 			    {{Form::open()}}
 				<div class="row">
 				    <div class="col-sm-10 col-sm-offset-1">
 					<div class="col-sm-6">
-					    <div class="form-group">
+					    <div class="form-group{{$errors->has('firstname') ? ' has-error' : ''}}">
 						<label for="firstname">Firstname</label>
-						<input type="text" class="form-control" id="firstname">
+						{{Form::text("firstname",NULL,array("class"=>"form-control"))}}
+						{{$errors->first("firstname", "<span class='help-inline'>:message</span>")}}
 					    </div>
 					</div>
 					<div class="col-sm-6">
-					    <div class="form-group">
+					    <div class="form-group{{$errors->has('lastname') ? ' has-error' : ''}}">
 						<label for="lastname">Lastname</label>
-						<input type="text" class="form-control" id="lastname">
+						{{Form::text("lastname",NULL,array("class"=>"form-control"))}}
+						{{$errors->first("lastname", "<span class='help-inline'>:message</span>")}}
 					    </div>
 					</div>
 					<div class="col-sm-6">
-					    <div class="form-group">
+					    <div class="form-group{{$errors->has('email') ? ' has-error' : ''}}">
 						<label for="email">Email</label>
-						<input type="text" class="form-control" id="email">
+						{{Form::text("email",NULL,array("class"=>"form-control"))}}
+						{{$errors->first("email", "<span class='help-inline'>:message</span>")}}
 					    </div>
 					</div>
 					<div class="col-sm-6">
-					    <div class="form-group">
+					    <div class="form-group{{$errors->has('subject') ? ' has-error' : ''}}">
 						<label for="subject">Subject</label>
-						<input type="text" class="form-control" id="subject">
+						{{Form::text("subject",NULL,array("class"=>"form-control"))}}
+						{{$errors->first("subject", "<span class='help-inline'>:message</span>")}}
 					    </div>
 					</div>	
 					<div class="col-sm-12">
-					    <div class="form-group">
-						<label for="message">Message</label>
-						<textarea id="message" class="form-control"></textarea>
+					    <div class="form-group{{$errors->has('body') ? ' has-error' : ''}}">
+						<label for="body">Message</label>
+						{{Form::textarea("body",NULL,array("class"=>"form-control","id"=>"body"))}}
+						{{$errors->first("body", "<span class='help-inline'>:message</span>")}}
 					    </div>
 					</div>
 
