@@ -18,19 +18,11 @@
 
 		    <div class="col-md-12">
 
-			<div class="box text-center" id="about">
+			<div class="box" id="about">
 			    <h3 class="text-uppercase">About Allen</h3>
 
-			    <p> Our sales office is in EU while production is in Bursa/Turkiye </p>
-			    <p>selling possibility WITHOUT 'VAT & CUSTOM DUTIES' (All custom duties and VAT are paid by Allen in Bulgaria and European customers have goods with no any taxes)</p>
-			    <p>Huge Production capacity ( Jacquard&dobby machines, warp&circular knitting machines and foam laminated by flame.)</p>
-			    <p>Huge Storage in Greece (2.000 m2. store in Thessaloniki/Greece. We keep stock from each designs and colours to be able to delivery from 1,00 meter to up. )</p>
-			    <p>product variety ( offers a wide range of products for HOME, OFFICE and VEHICLE interiors: These textiles are used for FURNITURE, SOFAS, CHAIRS, CURTAIN, PILLOWS, etc at home and SEATS, COUCHETTE, HEAD and ARM RESTS, DOOR and CEILING PANEL, CURTAIN etc at VEHICLE and also for OFFICE.)</p>
-			    <p>compatible prices</p>
-			    <p>delivery possibility from 1,00 mt to all EU (Via our store in Thessaloniki/Greece)</p>
-			    <p>innovation fabrics possibilities (Waterproofe, Fire retardant, easy clean etc. fabrics are possible)</p>
-			    <p> sales agent for Artificial Leather and Mattress ( we can supply artificial leathers and mattress from our store in Thessalonki)</p>
-			    <p> fast delivery time via either storage or factory.</p>
+			    {{$about}}
+
 			    <div class="same-height-row row">
 				<div class="col-sm-3">
 				    <div class="box same-height clickable no-border text-center-xs text-center-sm" style="height: 89px;">

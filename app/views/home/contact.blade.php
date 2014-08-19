@@ -21,8 +21,7 @@
 				<div class="col-sm-10 col-sm-offset-1">
 				    <h1>Contact</h1>
 
-				    <p class="lead">Are you curious about something? Do you have some kind of problem with our products?</p>
-				    <p>Please feel free to contact us, our customer service center is working for you 24/7.</p>
+				   {{$contact_lead}}
 
 				</div>
 			    </div>
@@ -32,16 +31,13 @@
 			    <div class="row">
 				<div class="col-sm-4">
 				    <h3><i class="fa fa-map-marker"></i> Address</h3>
-				    "Allen Eood"<br/>
-				    blvd. "James Bourchier"<br/>
-				    No: 76A,floor 3<sup>rd</sup><br/>
-				    <strong>Sofia/BULGARIA</strong></p>
+				  
+					    {{$address}}
+					
 				</div><!-- /.col-sm-4 -->
 				<div class="col-sm-4">
 				    <h3><i class="fa fa-phone"></i> Phone</h3>
-				    <p class="text-muted">.</p>
-				    <p>Tel&Fax : <strong>+359 2 439 4107</strong></p>
-				    <p>Mobile : <strong>+359 89 891 0007</strong></p>
+				    	{{$phone}}
 				</div><!-- /.col-sm-4 -->
 				<div class="col-sm-4">
 				    <h3><i class="fa fa-envelope"></i> Electronic support</h3>
