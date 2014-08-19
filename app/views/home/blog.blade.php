@@ -38,12 +38,13 @@
         <a href="{{URL::to("post/".$post->slug)}}"><i class="fa fa-calendar-o"></i> {{date("d.m.Y",strtotime($post->created_at))}}</a>
         <a href="{{URL::to("post/".$post->slug)}}"><i class="fa fa-comment-o"></i> 0 Comment</a>
           </p>
-          <div class="image" style="height: 342px;">
-        <a href="{{URL::to("post/".$post->slug)}}">
             @if($img = $post->uploads()->first())
+          <div class="image" style="height: 342px;">
+            <a href="{{URL::to("post/".$post->slug)}}">
             {{HTML::image($img->sizeImg(825,342,false),"",array("class"=>"img-responsive"))}}
-            @endif
+            </a>
           </div>
+            @endif
           <p class="intro">{{$post->lead}}</p>
           <p class="read-more"><a href="{{URL::to("post/".$post->slug)}}" class="btn btn-primary">Continue reading</a></p>
       </div>
