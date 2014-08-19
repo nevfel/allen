@@ -64,7 +64,7 @@
 
 				<div class="col-md-12 banner">
 				    <a href="{{URL::to("category")}}">
-				    	{{HTML::image("images/demo/banner2.jpg","",array("class"=>"img-responsive"))}}
+				    	{{HTML::image("images/banner2.jpg","",array("class"=>"img-responsive"))}}
 				    </a>
 				</div>
 
@@ -108,7 +108,7 @@
 
 			    <div class="banner">
 				<a href="{{URL::to("category")}}">
-					{{HTML::image("images/demo/banner.jpg","sales 2014",array("class"=>"img-responsive"))}}
+					{{HTML::image("images/banner.jpg","sales 2014",array("class"=>"img-responsive"))}}
 				</a>
 			    </div> <!-- /.banner -->
 			</div><!-- /.col-md-3 -->
