@@ -63,7 +63,7 @@
 			    <div class="row">
 
 				<div class="col-md-12 banner">
-				    <a href="{{URL::to("category")}}">
+				    <a href="{{URL::to("/")}}">
 				    	{{HTML::image("images/banner2.jpg","",array("class"=>"img-responsive"))}}
 				    </a>
 				</div>
@@ -107,7 +107,7 @@
 			    </div>
 
 			    <div class="banner">
-				<a href="{{URL::to("category")}}">
+				<a href="{{URL::to("/")}}">
 					{{HTML::image("images/banner.jpg","sales 2014",array("class"=>"img-responsive"))}}
 				</a>
 			    </div> <!-- /.banner -->

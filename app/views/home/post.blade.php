@@ -106,8 +106,8 @@
 			
 
 			<div class="banner">
-			    <a href="{{URL::to("category")}}">
-			    	{{HTML::image("images/demo/banner.jpg","",array("class"=>"img-responsive"))}}
+			    <a href="{{URL::to("/")}}">
+			    	{{HTML::image("images/banner.jpg","",array("class"=>"img-responsive"))}}
 			    </a>
 			</div> <!-- /.banner -->
 		    </div><!-- /.col-md-3 -->
