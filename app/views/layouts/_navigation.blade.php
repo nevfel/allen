@@ -66,7 +66,7 @@
 
 						</ul>
 					</li>
-					<li><a href="{{URL::to("contact")}}">Storage</a></li>
+					<li><a href="{{URL::to("storage")}}">Storage</a></li>
 					<li><a href="{{URL::to("contact")}}">Contact</a></li>
 				</ul>
 

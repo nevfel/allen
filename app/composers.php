@@ -17,3 +17,10 @@ View::composer("home.contact", function($view){
 		 ->with('phone',$phone)
 		 ->with('contact_lead',$contact_lead); 
 });
+View::composer("home.storage", function($view){
+	$blocks = App::make('Atiker\LaravelBootstrap\Blocks\BlocksInterface');
+	
+	$storage =	$blocks->getByKey('storage');
+
+	$view->with("storage",$storage); 
+});

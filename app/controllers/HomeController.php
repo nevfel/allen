@@ -60,4 +60,9 @@ class HomeController extends BaseController {
 
 		return View::make('home.post',compact("post"));
 	}
+
+	public function storage()
+	{
+		return View::make("home.storage");
+	}
 }

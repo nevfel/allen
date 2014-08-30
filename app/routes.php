@@ -23,6 +23,7 @@ Route::get("post/{slug}", "HomeController@post");
 Route::get("cart", "ProductController@cart");
 Route::get("text", "HomeController@getAbout");
 Route::get("blog", "HomeController@blog");
+Route::get("storage", "HomeController@storage");
 
 Route::get('ik','HomeController@getIk');
 Route::post('ik','HomeController@postIk')->before("csrf");
