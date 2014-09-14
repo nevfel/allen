@@ -1,7 +1,4 @@
 @extends("layouts.master")
-@section("head")
-
-@stop
 
 @section("intro")
 	@include("home._intro")
@@ -88,7 +85,9 @@
 				<div class="product">
 				    <div class="image" style="height: 255px;">
 					<a href="{{URL::to("product/".$product->slug)}}">
+					@if($product->uploads()->first())
 						{{HTML::image($product->uploads()->first()->sizeImg( 255, 255 , false ),"",array("class"=>"img-responsive image1"))}}
+					@endif
 					</a>
 				    </div><!-- /.image -->
 				    <div class="text">
