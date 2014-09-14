@@ -23,7 +23,7 @@
 					@foreach($storage->uploads as $img)
 						<div class="col-xs-6 col-md-3">
 						    <a href="#" class="thumbnail">
-						    	{{HTML::image($img->sizeImg( 400 , 400 , false ),"",array("class"=>"img-responsive"))}}
+						    	{{HTML::image($img->sizeImg( 500 , null , false ),"",array("class"=>"img-responsive"))}}
 						    </a>
 						</div>
 					@endforeach
