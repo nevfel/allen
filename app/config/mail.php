@@ -27,9 +27,8 @@ return array(
 	| the Postmark mail service, which will provide reliable delivery.
 	|
 	*/
-
 	'host' => 'butamedya.com',
-
+	
 	/*
 	|--------------------------------------------------------------------------
 	| SMTP Host Port
