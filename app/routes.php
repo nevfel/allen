@@ -45,18 +45,8 @@ Route::get('iletisim/index', function()
 {
 	return Redirect::to("iletisim",301);
 });
+
 Route::get('ik/index', function()
 {
 	return Redirect::to("ik",301);
-});
-
-Route::get("con",function(){
-	$contact = Contact::find(1)->toArray();
-	//echo "<pre>";print_r($contact);exit;
-	
-	Mail::send('emails.contact', $contact, function($message)
-	{
-	    $message->to('nevfelermumcu@gmail.com', 'Nevfel Ermumcu')->subject('Allen-bg.eu contact message');
-	});
-	return "mail send";
 });

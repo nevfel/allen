@@ -18,8 +18,15 @@ class HomeController extends BaseController {
 		{
 			$input["ip_address"] = $_SERVER["REMOTE_ADDR"];
 
-			Contact::create($input);
+			$contact = Contact::create($input);
 			
+			//echo "<pre>";print_r($contact);exit;
+			
+			Mail::queue('emails.contact', $contact->toArray(), function($message)
+			{
+			    $message->to('info@allen-bg.eu', 'Mahmut Atik')->subject('New Allen-bg.eu contact message');
+			});
+
 			return Redirect::to('contact')
 				->with("alert","success")
 				->with("message","Thank you for filling in this form! Your information has been successfully submitted. We will process its contents and get back to you as soon as possible.");
