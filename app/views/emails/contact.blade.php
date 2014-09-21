@@ -1,0 +1,36 @@
+<<html>
+<head>
+	<title></title>
+</head>
+<body>
+<table>
+	<thead>
+		<tr>
+			<th colspan="2">Allen-bg.eu contact message</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>Firstname</th>
+			<td>{{$firstname}}</td>
+		</tr>
+		<tr>
+			<th>Lastname</th>
+			<td>{{$lastname}}</td>
+		</tr>
+		<tr>
+			<th>Email</th>
+			<td>{{$email}}</td>
+		</tr>
+		<tr>
+			<th>Subject</th>
+			<td>{{$subject}}</td>
+		</tr>
+		<tr>
+			<th>Message</th>
+			<td>{{$body}}</td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>
