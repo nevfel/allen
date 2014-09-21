@@ -19,7 +19,7 @@ class HomeController extends BaseController {
 			$input["ip_address"] = $_SERVER["REMOTE_ADDR"];
 
 			Contact::create($input);
-
+			
 			return Redirect::to('contact')
 				->with("alert","success")
 				->with("message","Thank you for filling in this form! Your information has been successfully submitted. We will process its contents and get back to you as soon as possible.");
